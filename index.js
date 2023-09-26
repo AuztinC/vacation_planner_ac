@@ -1,5 +1,5 @@
 const pg = require('pg');
-const client = new pg.Client('postgres://localhost/the_vacation_planner_db');
+const client = new pg.Client(process.env.DATABASE_URL || 'postgres://localhost/the_vacation_planner_db');
 const express = require('express');
 const app = express();
 app.use(express.json());
