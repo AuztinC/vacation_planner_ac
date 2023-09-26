@@ -21,3 +21,8 @@ form {
 form > * {
   margin: 1rem;
 }
+
+#note{
+  margin-top: 2px;
+  height: 35px;
+}
